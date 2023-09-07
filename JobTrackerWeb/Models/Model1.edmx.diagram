@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="547b14641afa4633a134bedf6f6a96fb" Name="Diagram1">
+        <EntityTypeShape EntityType="DbJobTrackingModel.Admin" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbJobTrackingModel.Call" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbJobTrackingModel.CallDetails" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbJobTrackingModel.Companies" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbJobTrackingModel.Departments" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbJobTrackingModel.MissionDetails" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbJobTrackingModel.Missions" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbJobTrackingModel.Personel" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbJobTrackingModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="DbJobTrackingModel.FK_Call_Companies" ManuallyRouted="false" />
+        <AssociationConnector Association="DbJobTrackingModel.FK_CallDetails_Call" ManuallyRouted="false" />
+        <AssociationConnector Association="DbJobTrackingModel.FK_Personel_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="DbJobTrackingModel.FK_MissionDetails_Missions" ManuallyRouted="false" />
+        <AssociationConnector Association="DbJobTrackingModel.FK_Missions_Personel" ManuallyRouted="false" />
+        <AssociationConnector Association="DbJobTrackingModel.FK_Missions_Personel1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbJobTrackingModel.Messages" Width="1.5" PointX="4.25" PointY="9.125" />
+        <AssociationConnector Association="DbJobTrackingModel.FK_Messages_Companies" />
+        <AssociationConnector Association="DbJobTrackingModel.FK_Messages_Companies1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

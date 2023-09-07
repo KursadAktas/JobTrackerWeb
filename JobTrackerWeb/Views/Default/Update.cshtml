@@ -1,0 +1,20 @@
+﻿@model JobTrackerWeb.Models.Call
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_CompanyLayout.cshtml";
+}
+
+<h2>Çağrı Düzenleme Sayfası</h2>
+<br />
+
+@using (Html.BeginForm("Update", "Default", FormMethod.Post))
+{
+    
+    @Html.Label("Konu")
+    @Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+    <br />
+    @Html.TextAreaFor(x=>x.Description,10,4,new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary" >Güncelle</button>
+}
+

@@ -1,0 +1,38 @@
+﻿@model JobTrackerWeb.Models.Companies
+@{
+    ViewBag.Title = "ProfileEdit";
+    Layout = "~/Views/Shared/_CompanyLayout.cshtml";
+}
+
+<h2>Profil Düzenleme Sayfası</h2>
+<br />
+
+@using (Html.BeginForm("ProfileEdit", "Default", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.ID)
+    @Html.Label("Firma Adı")
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    @Html.Label("Yetkili")
+    @Html.TextBoxFor(x => x.Authorized, new { @class = "form-control" })
+    <br />
+    @Html.Label("Şifre")
+    @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+    <br />
+    @Html.Label("Sektör")
+    @Html.TextBoxFor(x => x.Sektor, new { @class = "form-control" })
+    <br />
+    @Html.Label("İl")
+    @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+    <br />
+    @Html.Label("İlçe")
+    @Html.TextBoxFor(x => x.Country, new { @class = "form-control" })
+    <br />
+ 
+    @Html.TextAreaFor(x => x.Adress, 10, 4, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+}
+
+
+

@@ -1,0 +1,26 @@
+﻿@model JobTrackerWeb.Models.Call
+@{
+    ViewBag.Title = "AddCall";
+    Layout = "~/Views/Shared/_CompanyLayout.cshtml";
+}
+
+<h2>Yeni Çağrı Ekle</h2>
+<br />
+<br />
+
+
+<form class="forms-sample" method="post">
+    <div class="form-group">
+        <label for="exampleInputName1">Adı Soyadı</label>
+        <input type="text" class="form-control" id="exampleInputName1" placeholder="Konu.." name="Subject">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail3">Görev</label>
+        <textarea rows="5" type="tel" class="form-control" id="exampleInputEmail3" placeholder="Açıklama.." name="Description"> </textarea>
+    </div>
+
+    <button type="submit" class="btn btn-info me-2">Kaydet</button>
+
+</form>
+
+

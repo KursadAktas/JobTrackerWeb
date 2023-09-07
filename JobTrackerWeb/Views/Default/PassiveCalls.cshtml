@@ -1,0 +1,34 @@
+﻿@model List<JobTrackerWeb.Models.Call>
+@{
+    ViewBag.Title = "PassiveCalls";
+    Layout = "~/Views/Shared/_CompanyLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Konu</th>
+        <th>Tarih</th>
+
+        <th>Detaylar</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Subject</td>
+            <td>@item.Date</td>
+
+            <td><a href="/Default/CallDetail/@item.ID" class="btn btn-info">Detaylar</a></td>
+        </tr>
+
+    }
+
+
+
+</table>
+
+<a href="/Default/AddCall" class="btn btn-primary">Yeni Çağrı Ekle</a>
+

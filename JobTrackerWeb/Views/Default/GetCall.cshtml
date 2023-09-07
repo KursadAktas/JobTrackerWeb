@@ -1,0 +1,24 @@
+﻿@model JobTrackerWeb.Models.Call
+@{
+    ViewBag.Title = "GetCall";
+    Layout = "~/Views/Shared/_CompanyLayout.cshtml";
+}
+
+
+
+<form class="forms-sample" method="post">
+    <label ></label>
+    <div class="form-group">
+        <label for="exampleInputName1">Adı Soyadı</label>
+        <input type="text" class="form-control" id="exampleInputName1" name="Subject" placeholder="Konu..">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail3">Görev</label>
+        <textarea rows="5" type="tel" class="form-control" id="exampleInputEmail3" name="Description" placeholder="Açıklama.."> </textarea>
+    </div>
+
+    <button type="submit" class="btn btn-info me-2">Kaydet</button>
+
+</form>
+
+

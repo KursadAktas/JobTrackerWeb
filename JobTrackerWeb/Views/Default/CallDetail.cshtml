@@ -1,0 +1,41 @@
+﻿@model List<JobTrackerWeb.Models.CallDetails>
+@{
+    ViewBag.Title = "CallDetail";
+    Layout = "~/Views/Shared/_CompanyLayout.cshtml";
+}
+
+
+<h1>Çağrı Detayları</h1>
+<br />
+<br />
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Açıklama</th>
+        <th>Tarih</th>
+        <th>Saat</th>
+
+        <th>Detaylar</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Description</td>
+            <td>@item.Date</td>
+            <td>@item.Saat</td>
+
+
+        </tr>
+
+    }
+
+
+
+</table>
+
+
